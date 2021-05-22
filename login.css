@@ -1,0 +1,156 @@
+
+ *, *:before, *:after {
+	 box-sizing: border-box;
+	 margin: 0;
+	 padding: 0;
+}
+ html, body {
+	 font-size: 62.5%;
+	 height: 100%;
+	 overflow: hidden !important;
+    
+}
+ @media (max-width: 768px) {
+	 html, body {
+		 font-size: 50%;
+	}
+	.logo{
+		
+		margin-left: 28px;
+		padding-bottom: 10%
+	}
+}
+ svg {
+	 display: inline-block;
+	 width: 2rem;
+	 height: 2rem;
+	 overflow: visible;
+}
+ .svg-icon {
+	 cursor: pointer;
+}
+ .svg-icon path {
+	 stroke: rgba(255, 255, 255, 0.9);
+	 fill: none;
+	 stroke-width: 1;
+}
+ input, button {
+	 outline: none;
+	 border: none;
+}
+ .cont {
+	 position: relative;
+	 height: 100%;
+	 background-image: url(dist/img/admins/blue-white-low-poly-triangle-shapes-background_1035-19007.jpg);
+	 background-size: cover;
+	 overflow: hidden;
+	 font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+     
+}
+ .demo {
+	 position: absolute;
+	 top: 25%;
+	 left: 50%;
+	 margin-left: -15rem;
+	 margin-top: -17.5rem;
+	 width: 35rem;
+	 height: 63rem;
+     overflow: hidden;
+     
+}
+ .login {
+	 position: relative;
+	 height: 100%;
+	 background: linear-gradient(to bottom, rgba(149, 242, 245, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+	 transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+	 transform: scale(1);
+     
+}
+ .login.inactive {
+	 opacity: 0;
+	 transform: scale(1.1);
+}
+ .login__form {
+	 position: absolute;
+	 top: 50%;
+	 left: 0;
+	 width: 100%;
+	 height: 50%;
+	 padding: 1.5rem 2.5rem;
+	 text-align: center;
+}
+ .login__row {
+	 height: 5rem;
+	 padding-top: 1rem;
+	 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+ .login__icon {
+	 margin-bottom: -0.4rem;
+	 margin-right: 0.5rem;
+}
+ .login__icon.name path {
+	 stroke-dasharray: 73.5019607544;
+	 stroke-dashoffset: 73.5019607544;
+	 animation: animatePath 2s 0.5s forwards;
+}
+ .login__icon.pass path {
+	 stroke-dasharray: 92.106628418;
+	 stroke-dashoffset: 92.106628418;
+	 animation: animatePath 2s 0.5s forwards;
+}
+ .login__input {
+	 display: inline-block;
+	 width: 22rem;
+	 height: 100%;
+	 padding-left: 1.5rem;
+	 font-size: 1.5rem;
+	 background: transparent;
+	 color: #fdfcfd;
+}
+ .login__submit {
+	 position: relative;
+	 width: 100%;
+	 height: 4rem;
+	 margin: 5rem 0 2.2rem;
+	 color: rgba(255, 255, 255, 0.8);
+	 background: rgb(59, 55, 255);
+	 font-size: 1.5rem;
+	 border-radius: 3rem;
+	 cursor: pointer;
+	 overflow: hidden;
+	 transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+	 transition: 1s;
+}
+.login__submit:hover{
+	color: rgb(59, 55, 255);
+	background-color: white;
+	font-size: 20px;
+	transition: 1s;
+
+}
+ 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(245, 243, 243);}
+    
+
+
+ @keyframes animatePath {
+	 to {
+		 stroke-dashoffset: 0;
+	}
+}
+
+.logo{
+width: 300px;
+height: 100px;
+z-index: 2;
+color: rgb(32, 32, 32);
+position: relative;
+left: 50%;
+top: 10%;
+transform: translate(-50%, -90%);
+padding-top: 30%;
+padding-left: 2rem;
+font-size: 60px;
+}
+
